@@ -24,6 +24,7 @@ function Item(props) {
   const localHost = "http://localhost:8080/";
   const agent = new HttpAgent({ host: localHost });
 
+  
   agent.fetchRootKey();
   let NFTActor;
 
@@ -75,7 +76,7 @@ function Item(props) {
     console.log("Sell clicked");
     setPriceInput(
       <input
-        placeholder="Price in AMNT "
+        placeholder="Price in AMNT"
         type="number"
         className="price-input"
         value={price}
